@@ -91,7 +91,7 @@ titledmissilegame/
 
 - [x] Temel yapıyı oluştur
 - [x] Boş bir arazi oluştur
-- [ ] Füze elemanını oluştur
+- [X] Füze elemanını oluştur
 - [ ] Füze elemanını kontrol edilebilir yap
 - [ ] Füze elemanını uçabilir yap
 - [ ] Yer çekimi ve diğer fizik unsurlarını ekle
