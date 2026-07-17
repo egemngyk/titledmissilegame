@@ -91,10 +91,13 @@ titledmissilegame/
 
 - [x] Temel yapıyı oluştur
 - [x] Boş bir arazi oluştur
-- [X] Füze elemanını oluştur
-- [ ] Füze elemanını kontrol edilebilir yap
-- [ ] Füze elemanını uçabilir yap
+- [x] Füze elemanını oluştur
+- [x] Füze elemanını kontrol edilebilir yap
 - [ ] Yer çekimi ve diğer fizik unsurlarını ekle
+- [ ] Füze elemanını uçabilir yap
+- [ ] Kamera nesnesi oluştur ve füzeyi kamera merkezine al
+- [ ] Kamera açısı mouse ile ayarlansın ve scroll hareketi ile ayarlanabilsin
+- [ ] Füze kameranın baktığı yöne doğru eğim hareketi sağlasın
 
 ---
 
