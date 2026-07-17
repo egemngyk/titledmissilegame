@@ -5,4 +5,6 @@ from core.game import Game
 app = Ursina()
 game = Game()
 
+EditorCamera()
+
 app.run()
