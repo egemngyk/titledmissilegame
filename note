@@ -1,0 +1,8 @@
+entity          # Bağlı olduğu Entity
+
+mass            # Kütle
+velocity        # Doğrusal hız
+force           # Bu framede uygulanan toplam kuvvet
+
+useGravity      # Yerçekiminden etkilensin mi?
+isStatic        # Hareket edebilir mi?

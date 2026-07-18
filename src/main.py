@@ -1,13 +1,10 @@
-from ursina import Ursina, EditorCamera
-# pyrefly: ignore [missing-import]
+from ursina import Ursina, EditorCamera, held_keys, time
 from core.game import Game
 
 app = Ursina()
 game = Game()
 
-def update(): game.update()
-
-def input(key): game.input(key)
+def update(): game.update(held_keys, time.dt)
 
 EditorCamera()
 

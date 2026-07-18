@@ -52,6 +52,11 @@ titledmissilegame/
 │   │   ├── npc.py
 │   │   ├── item.py
 │   │   └── projectile.py
+│   ├── physics/               # Fizik motorları
+│   │   ├── physics.py
+│   │   ├── collider.py
+│   │   ├── drag.py
+│   │   └── gravity.py
 │   │
 │   ├── world/              # Dünya sistemi
 │   │   ├── terrain.py
@@ -93,7 +98,9 @@ titledmissilegame/
 - [x] Boş bir arazi oluştur
 - [x] Füze elemanını oluştur
 - [x] Füze elemanını kontrol edilebilir yap
+- [x] Fizik motoru yapısı kur
 - [ ] Yer çekimi ve diğer fizik unsurlarını ekle
+- [ ] Nesneleri çarpışabilir yap
 - [ ] Füze elemanını uçabilir yap
 - [ ] Kamera nesnesi oluştur ve füzeyi kamera merkezine al
 - [ ] Kamera açısı mouse ile ayarlansın ve scroll hareketi ile ayarlanabilsin

@@ -1,26 +1,23 @@
-from ursina import held_keys
-# pyrefly: ignore [missing-import]
-from world.plot import Plot
-# pyrefly: ignore [missing-import]
-from entities.missile import Missile
+from world import Plot
+from entities import Missile
+from physics import PhysicsWorld, RigidBody 
 
 class Game:
     def __init__(self):
+        self.physicsWorld = PhysicsWorld()
+
         self.plot = Plot()
-
         self.missile = Missile()
-        self.missile.thrust=25
 
-    def update(self):
-        if held_keys["space"]:
-            self.missile.throttle(self.missile.thrust)
-        else:
-            self.missile.coast()
+        self.missile.physics = RigidBody(self.missile, self.physicsWorld)
 
-        key_map = {"w": "up", "a": "left", "s": "down", "d": "right"}
-        for key, rotation in key_map.items():
-            if held_keys[key]:
-                self.missile.control(rotation)
+        self.key_map = {"w": "up", "a": "left", "s": "down", "d": "right"}
 
-    def input(self, key):
-        pass
+    def update(self, held_keys, dt):
+        self.physicsWorld.update(dt)
+
+        if held_keys["space"]: self.missile.onFire()
+        else: self.missile.offFire()
+
+        for key, rotation in self.key_map.items():
+            if held_keys[key]: self.missile.control(rotation)

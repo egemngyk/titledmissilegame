@@ -4,6 +4,7 @@ from ursina import Entity, color
 class Plot(Entity):
     def __init__(self):
         super().__init__(
+            name="terrain",
             model="cube",
             color=color.gray,
             scale=(100, 2, 100),
