@@ -15,7 +15,7 @@ class RigidBody:
         self.world.addBody(self)
 
     def addForce(self, force):
-        pass
+        self.force += force
 
     def addImpulse(self, impulse):
         pass

@@ -99,8 +99,17 @@ titledmissilegame/
 - [x] Füze elemanını oluştur
 - [x] Füze elemanını kontrol edilebilir yap
 - [x] Fizik motoru yapısı kur
-- [ ] Yer çekimi ve diğer fizik unsurlarını ekle
-- [ ] Nesneleri çarpışabilir yap
+- [x] Yer çekimi ve diğer fizik unsurlarını ekle
+- [x] Nesneleri çarpışabilir yap
+- [ ] Fizik motorunu tamamla
+    - [x] Collision detection
+    - [x] Collision resolution
+    - [ ] Restitution (sekme)
+    - [ ] Friction (sürtünme)
+    - [ ] Torque (dönme kuvveti)
+    - [ ] Angular velocity
+    - [ ] Sphere/Capsule/Mesh shape
+    - [ ] Broad phase (QuadTree/BVH)
 - [ ] Füze elemanını uçabilir yap
 - [ ] Kamera nesnesi oluştur ve füzeyi kamera merkezine al
 - [ ] Kamera açısı mouse ile ayarlansın ve scroll hareketi ile ayarlanabilsin

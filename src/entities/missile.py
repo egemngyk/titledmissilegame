@@ -3,13 +3,13 @@ from ursina import Entity, color, time
 
 class Missile(Entity):
     def __init__(self):
-        super().__init__(y=12,)
+        super().__init__(y=12, name="missile")
         self.velocity = Vec3(0, 0, 0)
 
-        self.body = Entity(parent=self, y=.3)
+        self.body = Entity(parent=self, y=.3, name="missile-body")
 
         self.top_part = Entity(
-            name="top-part",
+            name="missile-top-part",
             model="cube",
             color=color.red,
             scale=(1, 1.8, 1),
@@ -20,7 +20,7 @@ class Missile(Entity):
         )
 
         self.bot_part = Entity(
-            name="bot-part",
+            name="missile-bot-part",
             model="cube",
             color=color.blue,
             scale=(1, .6, 1),
@@ -31,6 +31,7 @@ class Missile(Entity):
         self.bot_part.position = self.top_part.position + Vec3(0, -1.2, 0)
 
         self.fire = Entity(
+            name="missile-fire",
             model="cube",
             color=color.orange,
             scale=(1, .6, 1),
