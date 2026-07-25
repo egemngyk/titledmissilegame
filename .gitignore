@@ -9,5 +9,14 @@ wheels/
 # Virtual environments
 .venv
 
-.vscode
+# IDE
+.vscode/
+
+# Project-specific
 note
+saves/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
