@@ -1,34 +1,52 @@
-# 🚀 Titled Missile Game
+# Titled Missile Game
 
-> A 3D physics-based missile simulation game built with [Ursina Engine](https://www.ursinaengine.org/) and Python.
+<p align="center">
+  <strong>A 3D physics-based missile simulation game built with Python and Ursina Engine.</strong>
+</p>
 
-[![Python](https://img.shields.io/badge/Python-3.13%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Ursina](https://img.shields.io/badge/Ursina-8.3%2B-orange)](https://www.ursinaengine.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-In%20Development-yellow)]()
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)]()
+<p align="center">
+  <a href="https://www.ursinaengine.org/">
+    <img src="https://img.shields.io/badge/Ursina-8.3%2B-orange" alt="Ursina" />
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.13%2B-blue?logo=python&logoColor=white" alt="Python" />
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
+  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status" />
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey" alt="Platform" />
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#controls">Controls</a> •
+  <a href="#project-structure">Project Structure</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#roadmap">Roadmap</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#license">License</a>
+</p>
 
 ---
 
-## 📖 About
+## About
 
-**Titled Missile Game** is a 3D physics-based game where you control a missile in a simulated environment. The project features a custom-built physics engine with gravity, collision detection and resolution, all rendered using the Ursina 3D game engine.
+**Titled Missile Game** is a 3D physics-based game where you control a missile in a simulated environment. The project features a custom-built physics engine with gravity, collision detection, and resolution, all rendered using the Ursina 3D game engine.
 
 The game is currently in active development. The primary target is desktop platforms (Windows, Linux, macOS), with Android support planned for a future release after the core experience is polished.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎮 **Controllable Missile** — Rotate and maneuver the missile using keyboard input
-- 🌍 **Custom Physics Engine** — Gravity, force accumulation, velocity integration
-- 💥 **Collision System** — AABB/Box-shape collision detection and resolution
-- 🔥 **Visual Feedback** — Fire effect toggles when thrusting
-- 🧱 **Modular Architecture** — Clean separation of entities, physics, world, and core systems
+- **Controllable Missile**: Rotate and maneuver the missile using keyboard input.
+- **Custom Physics Engine**: Gravity, force accumulation, and velocity integration.
+- **Collision System**: AABB/Box-shape collision detection and resolution.
+- **Visual Feedback**: Fire effect toggles when thrusting.
+- **Modular Architecture**: Clean separation of entities, physics, world, and core systems.
 
 ---
 
-## 🎮 Controls
+## Controls
 
 | Key | Action |
 |-----|--------|
@@ -42,9 +60,9 @@ The game is currently in active development. The primary target is desktop platf
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
-```
+```text
 titledmissilegame/
 ├── pyproject.toml          # Project metadata & dependencies
 ├── requirements.txt        # Pip dependencies
@@ -94,35 +112,37 @@ titledmissilegame/
 
 ---
 
-## 🚀 Getting Started
+## Installation
 
 ### Prerequisites
 
-- Python **3.13.5** or higher
-- [uv](https://github.com/astral-sh/uv) (recommended) **or** pip
+- Python **3.13.5** or higher.
+- [uv](https://github.com/astral-sh/uv) (recommended) or pip.
 
-### Installation
-
-#### Using `uv` (Recommended)
+### Clone the Repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/titledmissilegame.git
 cd titledmissilegame
+```
 
-# Install dependencies
+### Using uv (Recommended)
+
+Install dependencies using uv:
+
+```bash
 uv sync
 ```
 
-#### Using `pip`
+### Using pip
+
+Create a virtual environment and install the dependencies:
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/titledmissilegame.git
-cd titledmissilegame
-
 # Create a virtual environment
 python -m venv .venv
+
+# Activate the environment
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
@@ -131,19 +151,24 @@ pip install -r requirements.txt
 
 ### Running the Game
 
-```bash
-# With uv
-uv run python src/main.py
+Using uv:
 
-# With pip / activated venv
+```bash
+uv run python src/main.py
+```
+
+Using pip with an activated virtual environment:
+
+```bash
 python src/main.py
 ```
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-### ✅ Completed
+### Completed
+
 - [x] Basic project structure
 - [x] Empty terrain / plot
 - [x] Missile entity with visual components
@@ -153,7 +178,8 @@ python src/main.py
 - [x] Collision detection (Box shapes)
 - [x] Collision resolution (separation & velocity zeroing)
 
-### 🔧 In Progress
+### In Progress
+
 - [ ] Complete physics engine
   - [x] Collision detection
   - [x] Collision resolution
@@ -163,7 +189,8 @@ python src/main.py
   - [ ] Sphere / Capsule / Mesh shapes
   - [ ] Broad phase optimization (QuadTree / BVH)
 
-### 📋 Planned
+### Planned
+
 - [ ] Missile flight mechanics
 - [ ] Dedicated camera object following the missile
 - [ ] Mouse-controlled camera (orbit + scroll zoom)
@@ -173,50 +200,54 @@ python src/main.py
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
-| [Python 3.13](https://www.python.org/) | Primary language |
-| [Ursina Engine 8.3+](https://www.ursinaengine.org/) | 3D rendering & game loop |
-| [uv](https://github.com/astral-sh/uv) | Package & environment management |
+| [Python 3.13](https://www.python.org/) | Primary programming language |
+| [Ursina Engine 8.3+](https://www.ursinaengine.org/) | 3D rendering and game loop |
+| [uv](https://github.com/astral-sh/uv) | Package and environment management |
 
 ---
 
-## 🏛️ Architecture
+## Architecture
 
-The project follows a modular, component-based architecture:
+The project follows a modular, component-based architecture.
 
-- **`PhysicsWorld`** — Manages all rigid bodies and colliders. Steps the simulation each frame (force accumulation → velocity integration → collision detection → resolution).
-- **`RigidBody`** — Stores mass, velocity, accumulated force, gravity toggle, and static flag for each physics-enabled entity.
-- **`Collider`** — Holds a list of shapes attached to an entity. Used in broad/narrow-phase collision checks.
-- **`Missile`** — An Ursina `Entity` composed of sub-entities (top body, bottom body, fire effect) with rotation controls.
-- **`Game`** — Wires everything together: creates the world, missile, attaches physics components, and dispatches input each frame.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/titledmissilegame/issues).
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- **`PhysicsWorld`**: Manages all rigid bodies and colliders. Steps the simulation each frame (force accumulation → velocity integration → collision detection → resolution).
+- **`RigidBody`**: Stores mass, velocity, accumulated force, gravity toggle, and static flag for each physics-enabled entity.
+- **`Collider`**: Holds a list of shapes attached to an entity. Used in broad/narrow-phase collision checks.
+- **`Missile`**: An Ursina `Entity` composed of sub-entities (top body, bottom body, fire effect) with rotation controls.
+- **`Game`**: Wires everything together: creates the world, missile, attaches physics components, and dispatches input each frame.
 
 ---
 
-## 📝 License
+## Contributing
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [Issues page](https://github.com/yourusername/titledmissilegame/issues).
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`).
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
 
 ---
 
-## 👤 Author
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
 
 **Egemen** — [@egemngyk](https://github.com/egemngyk)
 
 ---
 
-<p align="center">Made with ❤️ and Python</p>
+<p align="center">
+  Made with Python
+</p>
